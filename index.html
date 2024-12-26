@@ -172,7 +172,10 @@
       </section>
 
       <!-- main section  -->
-      <section class="mt-10 border-t-4 border-t-[#1DD100] rounded-t-[100px]">
+      <section
+        id="buy-ticket"
+        class="mt-10 border-t-4 border-t-[#1DD100] rounded-t-[100px]"
+      >
         <div class="px-10 md:px-20 lg:px-32 py-2 md:py-4 lg:py-6 mt-20">
           <h1 class="text-center font-raleway font-bold text-5xl">
             P.H. Paribahan
@@ -259,7 +262,7 @@
         <div class="px-10 md:px-20 lg:px-32 py-2 md:py-4 lg:py-6 mt-10">
           <div class="flex p-5 rounded-3xl bg-white">
             <div
-              class="w-[60%] border-r-2 border-dashed border-[#0307124D] px-5"
+              class="w-[60%] border-r-2 border-dashed border-[#0307124D] px-5 text-[#03071280]"
             >
               <h2
                 class="font-raleway text-2xl font-semibold pb-3 border-b-2 border-dashed border-[#0307124D]"
@@ -267,7 +270,7 @@
                 Select Your Seat
               </h2>
               <div
-                class="flex justify-between py-4 text-xl font-inter border-b-2 border-dashed border-[#0307124D]"
+                class="flex justify-between py-4 text-xl font-inter border-b-2 border-dashed border-[#0307124D] mb-5"
               >
                 <p class="text-[#03071280] flex justify-center items-center">
                   <img src="images/seat-gray.png" alt="" class="inline-block" />
@@ -282,23 +285,168 @@
                   <span class="inline-block"> Selected </span>
                 </p>
               </div>
-              <div class="flex gap-4">
+              <div class="flex justify-end my-3">
+                <img
+                  class="rounded-lg bg-[#0307121A] py-5 px-10 inline-block"
+                  src="images/icons/steering.svg"
+                  alt=""
+                />
+              </div>
+              <div class="flex gap-4 text-center">
                 <div
                   class="w-3/5 grid grid-cols-3 gap-3 justify-center items-center"
                 >
                   <p>A</p>
-                  <p>A1</p>
-                  <p>A2</p>
+                  <p class="rounded-lg bg-[#F7F8F8] py-3">A1</p>
+                  <p class="rounded-lg bg-[#F7F8F8] py-3">A2</p>
+                  <p>B</p>
+                  <p class="rounded-lg bg-[#F7F8F8] py-3">B1</p>
+                  <p class="rounded-lg bg-[#F7F8F8] py-3">B2</p>
+                  <p>C</p>
+                  <p class="rounded-lg bg-[#F7F8F8] py-3">C1</p>
+                  <p class="rounded-lg bg-[#F7F8F8] py-3">C2</p>
+                  <p>D</p>
+                  <p id="D1" class="rounded-lg bg-[#F7F8F8] py-3">D1</p>
+                  <p id="D2" class="rounded-lg bg-[#F7F8F8] py-3">D2</p>
+                  <p>E</p>
+                  <p id="E1" class="rounded-lg bg-[#F7F8F8] py-3">E1</p>
+                  <p id="E2" class="rounded-lg bg-[#F7F8F8] py-3">E2</p>
+                  <p>F</p>
+                  <p id="F1" class="rounded-lg bg-[#F7F8F8] py-3">F1</p>
+                  <p id="F2" class="rounded-lg bg-[#F7F8F8] py-3">F2</p>
+                  <p>G</p>
+                  <p id="G1" class="rounded-lg bg-[#F7F8F8] py-3">G1</p>
+                  <p id="G2" class="rounded-lg bg-[#F7F8F8] py-3">G2</p>
+                  <p>H</p>
+                  <p id="H1" class="rounded-lg bg-[#F7F8F8] py-3">H1</p>
+                  <p id="H2" class="rounded-lg bg-[#F7F8F8] py-3">H2</p>
+                  <p>I</p>
+                  <p id="I1" class="rounded-lg bg-[#F7F8F8] py-3">I1</p>
+                  <p id="I2" class="rounded-lg bg-[#F7F8F8] py-3">I2</p>
+                  <p>J</p>
+                  <p id="J1" class="rounded-lg bg-[#F7F8F8] py-3">J1</p>
+                  <p id="J2" class="rounded-lg bg-[#F7F8F8] py-3">J2</p>
                 </div>
                 <div
                   class="w-2/5 grid grid-cols-2 gap-3 justify-center items-center"
                 >
-                  <p>A3</p>
-                  <p>A4</p>
+                  <p id="A3" class="rounded-lg bg-[#F7F8F8] py-3">A3</p>
+                  <p id="A4" class="rounded-lg bg-[#F7F8F8] py-3">A4</p>
+                  <p id="B3" class="rounded-lg bg-[#F7F8F8] py-3">B3</p>
+                  <p id="B4" class="rounded-lg bg-[#F7F8F8] py-3">B4</p>
+                  <p id="C3" class="rounded-lg bg-[#F7F8F8] py-3">C3</p>
+                  <p id="C4" class="rounded-lg bg-[#F7F8F8] py-3">C4</p>
+                  <p id="D3" class="rounded-lg bg-[#F7F8F8] py-3">D3</p>
+                  <p id="D4" class="rounded-lg bg-[#F7F8F8] py-3">D4</p>
+                  <p id="E3" class="rounded-lg bg-[#F7F8F8] py-3">E3</p>
+                  <p id="E4" class="rounded-lg bg-[#F7F8F8] py-3">E4</p>
+                  <p id="F3" class="rounded-lg bg-[#F7F8F8] py-3">F3</p>
+                  <p id="F4" class="rounded-lg bg-[#F7F8F8] py-3">F4</p>
+                  <p id="G3" class="rounded-lg bg-[#F7F8F8] py-3">G3</p>
+                  <p id="G4" class="rounded-lg bg-[#F7F8F8] py-3">G4</p>
+                  <p id="H3" class="rounded-lg bg-[#F7F8F8] py-3">H3</p>
+                  <p id="H4" class="rounded-lg bg-[#F7F8F8] py-3">H4</p>
+                  <p id="I3" class="rounded-lg bg-[#F7F8F8] py-3">I3</p>
+                  <p id="I4" class="rounded-lg bg-[#F7F8F8] py-3">I4</p>
+                  <p id="J3" class="rounded-lg bg-[#F7F8F8] py-3">J3</p>
+                  <p id="J4" class="rounded-lg bg-[#F7F8F8] py-3">J4</p>
                 </div>
               </div>
             </div>
-            <div class="w-[40%]"></div>
+            <div class="w-[40%] px-5">
+              <h2
+                class="font-raleway text-2xl font-semibold pb-3 border-b-2 border-dashed border-[#0307124D]"
+              >
+                Your information
+              </h2>
+              <div class="mt-4 rounded-2xl bg-[#F7F8F8] p-5">
+                <div
+                  class="grid grid-cols-3 justify-between pb-3 text-[#030712] font-inter"
+                >
+                  <p>
+                    Seat
+                    <span class="bg-[#1DD100] rounded-lg text-white p-2"
+                      >2</span
+                    >
+                  </p>
+                  <p>Class</p>
+                  <p>Price</p>
+                  <span
+                    class="col-span-3 border-b-2 border-dashed border-[#0307124D] my-3"
+                  ></span>
+                  <p class="font-inter text-[#03071299] py-3">C2</p>
+                  <p class="font-inter text-[#03071299] py-3">Economy</p>
+                  <p class="font-inter text-[#03071299] py-3">550</p>
+                  <p class="font-inter text-[#03071299] py-3">C2</p>
+                  <p class="font-inter text-[#03071299] py-3">Economy</p>
+                  <p class="font-inter text-[#03071299] py-3">550</p>
+                  <span
+                    class="col-span-3 border-b-2 border-dashed border-[#0307124D] my-3"
+                  ></span>
+                  <p class="text-[#030712] font-inter font-bold">Total Price</p>
+                  <p></p>
+                  <p class="text-[#030712] font-inter font-bold">BDT 1100</p>
+                  <div
+                    class="col-span-3 bg-white rounded-xl flex justify-between items-center my-3 px-3"
+                  >
+                    <input
+                      class="text-[#03071266] text-sm py-4 focus:outline-none"
+                      type="text"
+                      placeholder="Have any coupon?"
+                    />
+                    <button
+                      class="btn bg-[#1DD100] rounded-xl border-0 text-0 my-2 text-white"
+                    >
+                      Apply
+                    </button>
+                  </div>
+                  <p class="text-[#030712] font-inter font-bold">Total Price</p>
+                  <p></p>
+                  <p class="text-[#030712] font-inter font-bold">BDT 1100</p>
+                </div>
+              </div>
+              <div class="font-inter">
+                <label class="form-control w-full">
+                  <div class="label">
+                    <span class="label-text font-bold">Passenger Name*</span>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    class="input input-bordered w-full"
+                  />
+                </label>
+                <label class="form-control w-full">
+                  <div class="label">
+                    <span class="label-text font-bold">Phone Number*</span>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Enter your phone number"
+                    class="input input-bordered w-full"
+                  />
+                </label>
+                <label class="form-control w-full">
+                  <div class="label">
+                    <span class="label-text font-bold">Email ID*</span>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Enter your email"
+                    class="input input-bordered w-full"
+                  />
+                </label>
+                <button
+                  class="w-full text-white font-bold bg-[#1DD100] py-4 rounded-2xl my-5"
+                >
+                  Next
+                </button>
+                <div class="flex justify-around text-[#03071299]">
+                  <a class="underline" href="#">Terms and Conditions</a
+                  ><a class="underline" href="#">Cancellation Policy</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
