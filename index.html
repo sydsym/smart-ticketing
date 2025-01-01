@@ -266,7 +266,7 @@
         <div class="px-10 md:px-20 lg:px-32 py-2 md:py-4 lg:py-6 mt-10">
           <div class="flex p-5 rounded-3xl bg-white">
             <div
-              class="w-[60%] border-r-2 border-dashed border-[#0307124D] px-5 text-[#03071280]"
+              class="w-[60%] border-r-2 border-dashed border-[#0307124D] px-5 text-[#03071280] relative"
             >
               <h2
                 class="font-raleway text-2xl font-semibold pb-3 border-b-2 border-dashed border-[#0307124D]"
@@ -296,7 +296,7 @@
                   alt=""
                 />
               </div>
-              <div class="flex gap-4 text-center">
+              <div id="seat-area" class="flex gap-4 text-center">
                 <div
                   class="w-3/5 grid grid-cols-3 gap-3 justify-center items-center"
                 >
@@ -556,6 +556,10 @@
                   </p>
                 </div>
               </div>
+              <div
+                class="absolute bg-[#ffffff03] h-full w-full left-0 top-0 hidden"
+                id="seat-disable"
+              ></div>
             </div>
             <div class="w-[40%] px-5">
               <h2
@@ -582,11 +586,7 @@
                   <div
                     id="selected-seats-details"
                     class="grid grid-cols-3 col-span-3 justify-between"
-                  >
-                    <!-- <p class="font-inter text-[#03071299] py-3">C2</p>
-                    <p class="font-inter text-[#03071299] py-3">Economy</p>
-                    <p class="font-inter text-[#03071299] py-3">550</p> -->
-                  </div>
+                  ></div>
                   <span
                     class="col-span-3 border-b-2 border-dashed border-[#0307124D] my-3"
                   ></span>
@@ -595,22 +595,43 @@
                   <p class="text-[#030712] font-inter font-bold">
                     BDT <span id="total-price"></span>
                   </p>
+                  <p
+                    id="td-1"
+                    class="text-[#030712] font-inter font-bold hidden"
+                  >
+                    Total Discount
+                  </p>
+                  <p id="td-2" class="hidden"></p>
+                  <p
+                    id="td-3"
+                    class="text-[#030712] font-inter font-bold hidden"
+                  >
+                    BDT <span id="total-discount"></span>
+                  </p>
                   <div
-                    class="col-span-3 bg-white rounded-xl flex justify-between items-center my-3 px-3 disabled:"
+                    class="col-span-3 bg-white rounded-xl flex justify-between items-center my-3 px-3"
+                    id="coupon-area"
                   >
                     <input
-                      class="text-[#03071266] text-sm py-4 focus:outline-none"
+                      class="text-[#03071266] text-sm py-4 focus:outline-none focus:bg-white"
                       type="text"
                       placeholder="Have any coupon?"
                       disabled
+                      id="coupon-input"
                     />
                     <button
                       class="btn bg-[#1DD100] rounded-xl border-0 text-0 my-2 text-white"
                       disabled
+                      id="apply-btn"
                     >
                       Apply
                     </button>
                   </div>
+                  <p
+                    id="coupon-alert"
+                    class="bg-[#ff00001e] text-red-700 text-sm col-span-3 p-3 rounded-xl"
+                  >
+                  </small>
                   <p class="text-[#030712] font-inter font-bold">Grand Total</p>
                   <p></p>
                   <p class="text-[#030712] font-inter font-bold">
