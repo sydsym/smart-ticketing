@@ -143,7 +143,7 @@
             </div>
             <div><img src="images/cupon-devider.png" class="h-full" /></div>
             <div class="h-full flex flex-col justify-center ml-2 w-1/4">
-              <h3 class="font-raleway font-bold text-4xl">NEW15</h3>
+              <h3 class="font-raleway font-bold text-4xl" id="new15"></h3>
               <p class="font-raleway">Coupon Code</p>
             </div>
           </div>
@@ -157,7 +157,9 @@
             </div>
             <div><img src="images/cupon-devider.png" class="h-full" /></div>
             <div class="h-full flex flex-col justify-center ml-2 w-1/4">
-              <h3 class="font-raleway font-bold text-4xl">Couple 20</h3>
+              <h3 class="font-raleway font-bold text-4xl" id="couple20">
+                Couple 20
+              </h3>
               <p class="font-raleway">Coupon Code</p>
             </div>
           </div>
@@ -209,7 +211,7 @@
                 </div>
                 <div class="bg-[#1DD10026] px-8 py-3 rounded-xl text-[#1DD100]">
                   <img src="images/seat-green.png" class="inline" alt="" />
-                  <span>40</span>
+                  <span id="available-seats"></span>
                   <span>Seats left</span>
                 </div>
               </div>
@@ -254,7 +256,9 @@
               class="w-[25%] flex flex-col justify-center items-center gap-1"
             >
               <img src="images/icons/bdt.svg" alt="" />
-              <h3 class="font-raleway mt-3 text-3xl font-bold">550 Taka</h3>
+              <h3 class="font-raleway mt-3 text-3xl font-bold">
+                <span id="seat-price"></span> Taka
+              </h3>
               <p class="text-[#03071299]">Per Seat</p>
             </div>
           </div>
@@ -297,59 +301,259 @@
                   class="w-3/5 grid grid-cols-3 gap-3 justify-center items-center"
                 >
                   <p>A</p>
-                  <p class="rounded-lg bg-[#F7F8F8] py-3">A1</p>
-                  <p class="rounded-lg bg-[#F7F8F8] py-3">A2</p>
+                  <p
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                    id="A1"
+                  >
+                    A1
+                  </p>
+                  <p
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                    id="A2"
+                  >
+                    A2
+                  </p>
                   <p>B</p>
-                  <p class="rounded-lg bg-[#F7F8F8] py-3">B1</p>
-                  <p class="rounded-lg bg-[#F7F8F8] py-3">B2</p>
+                  <p
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                    id="B1"
+                  >
+                    B1
+                  </p>
+                  <p
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                    id="B2"
+                  >
+                    B2
+                  </p>
                   <p>C</p>
-                  <p class="rounded-lg bg-[#F7F8F8] py-3">C1</p>
-                  <p class="rounded-lg bg-[#F7F8F8] py-3">C2</p>
+                  <p
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                    id="C1"
+                  >
+                    C1
+                  </p>
+                  <p
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                    id="C2"
+                  >
+                    C2
+                  </p>
                   <p>D</p>
-                  <p id="D1" class="rounded-lg bg-[#F7F8F8] py-3">D1</p>
-                  <p id="D2" class="rounded-lg bg-[#F7F8F8] py-3">D2</p>
+                  <p
+                    id="D1"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    D1
+                  </p>
+                  <p
+                    id="D2"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    D2
+                  </p>
                   <p>E</p>
-                  <p id="E1" class="rounded-lg bg-[#F7F8F8] py-3">E1</p>
-                  <p id="E2" class="rounded-lg bg-[#F7F8F8] py-3">E2</p>
+                  <p
+                    id="E1"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    E1
+                  </p>
+                  <p
+                    id="E2"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    E2
+                  </p>
                   <p>F</p>
-                  <p id="F1" class="rounded-lg bg-[#F7F8F8] py-3">F1</p>
-                  <p id="F2" class="rounded-lg bg-[#F7F8F8] py-3">F2</p>
+                  <p
+                    id="F1"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    F1
+                  </p>
+                  <p
+                    id="F2"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    F2
+                  </p>
                   <p>G</p>
-                  <p id="G1" class="rounded-lg bg-[#F7F8F8] py-3">G1</p>
-                  <p id="G2" class="rounded-lg bg-[#F7F8F8] py-3">G2</p>
+                  <p
+                    id="G1"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    G1
+                  </p>
+                  <p
+                    id="G2"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    G2
+                  </p>
                   <p>H</p>
-                  <p id="H1" class="rounded-lg bg-[#F7F8F8] py-3">H1</p>
-                  <p id="H2" class="rounded-lg bg-[#F7F8F8] py-3">H2</p>
+                  <p
+                    id="H1"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    H1
+                  </p>
+                  <p
+                    id="H2"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    H2
+                  </p>
                   <p>I</p>
-                  <p id="I1" class="rounded-lg bg-[#F7F8F8] py-3">I1</p>
-                  <p id="I2" class="rounded-lg bg-[#F7F8F8] py-3">I2</p>
+                  <p
+                    id="I1"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    I1
+                  </p>
+                  <p
+                    id="I2"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    I2
+                  </p>
                   <p>J</p>
-                  <p id="J1" class="rounded-lg bg-[#F7F8F8] py-3">J1</p>
-                  <p id="J2" class="rounded-lg bg-[#F7F8F8] py-3">J2</p>
+                  <p
+                    id="J1"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    J1
+                  </p>
+                  <p
+                    id="J2"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    J2
+                  </p>
                 </div>
                 <div
                   class="w-2/5 grid grid-cols-2 gap-3 justify-center items-center"
                 >
-                  <p id="A3" class="rounded-lg bg-[#F7F8F8] py-3">A3</p>
-                  <p id="A4" class="rounded-lg bg-[#F7F8F8] py-3">A4</p>
-                  <p id="B3" class="rounded-lg bg-[#F7F8F8] py-3">B3</p>
-                  <p id="B4" class="rounded-lg bg-[#F7F8F8] py-3">B4</p>
-                  <p id="C3" class="rounded-lg bg-[#F7F8F8] py-3">C3</p>
-                  <p id="C4" class="rounded-lg bg-[#F7F8F8] py-3">C4</p>
-                  <p id="D3" class="rounded-lg bg-[#F7F8F8] py-3">D3</p>
-                  <p id="D4" class="rounded-lg bg-[#F7F8F8] py-3">D4</p>
-                  <p id="E3" class="rounded-lg bg-[#F7F8F8] py-3">E3</p>
-                  <p id="E4" class="rounded-lg bg-[#F7F8F8] py-3">E4</p>
-                  <p id="F3" class="rounded-lg bg-[#F7F8F8] py-3">F3</p>
-                  <p id="F4" class="rounded-lg bg-[#F7F8F8] py-3">F4</p>
-                  <p id="G3" class="rounded-lg bg-[#F7F8F8] py-3">G3</p>
-                  <p id="G4" class="rounded-lg bg-[#F7F8F8] py-3">G4</p>
-                  <p id="H3" class="rounded-lg bg-[#F7F8F8] py-3">H3</p>
-                  <p id="H4" class="rounded-lg bg-[#F7F8F8] py-3">H4</p>
-                  <p id="I3" class="rounded-lg bg-[#F7F8F8] py-3">I3</p>
-                  <p id="I4" class="rounded-lg bg-[#F7F8F8] py-3">I4</p>
-                  <p id="J3" class="rounded-lg bg-[#F7F8F8] py-3">J3</p>
-                  <p id="J4" class="rounded-lg bg-[#F7F8F8] py-3">J4</p>
+                  <p
+                    id="A3"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    A3
+                  </p>
+                  <p
+                    id="A4"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    A4
+                  </p>
+                  <p
+                    id="B3"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    B3
+                  </p>
+                  <p
+                    id="B4"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    B4
+                  </p>
+                  <p
+                    id="C3"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    C3
+                  </p>
+                  <p
+                    id="C4"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    C4
+                  </p>
+                  <p
+                    id="D3"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    D3
+                  </p>
+                  <p
+                    id="D4"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    D4
+                  </p>
+                  <p
+                    id="E3"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    E3
+                  </p>
+                  <p
+                    id="E4"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    E4
+                  </p>
+                  <p
+                    id="F3"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    F3
+                  </p>
+                  <p
+                    id="F4"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    F4
+                  </p>
+                  <p
+                    id="G3"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    G3
+                  </p>
+                  <p
+                    id="G4"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    G4
+                  </p>
+                  <p
+                    id="H3"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    H3
+                  </p>
+                  <p
+                    id="H4"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    H4
+                  </p>
+                  <p
+                    id="I3"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    I3
+                  </p>
+                  <p
+                    id="I4"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    I4
+                  </p>
+                  <p
+                    id="J3"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    J3
+                  </p>
+                  <p
+                    id="J4"
+                    class="rounded-lg bg-[#F7F8F8] py-3 cursor-pointer hover:opacity-80"
+                  >
+                    J4
+                  </p>
                 </div>
               </div>
             </div>
@@ -365,44 +569,53 @@
                 >
                   <p>
                     Seat
-                    <span class="bg-[#1DD100] rounded-lg text-white p-2"
-                      >2</span
-                    >
+                    <span
+                      class="bg-[#1DD100] rounded-lg text-white p-2"
+                      id="selected-seats"
+                    ></span>
                   </p>
                   <p>Class</p>
                   <p>Price</p>
                   <span
                     class="col-span-3 border-b-2 border-dashed border-[#0307124D] my-3"
                   ></span>
-                  <p class="font-inter text-[#03071299] py-3">C2</p>
-                  <p class="font-inter text-[#03071299] py-3">Economy</p>
-                  <p class="font-inter text-[#03071299] py-3">550</p>
-                  <p class="font-inter text-[#03071299] py-3">C2</p>
-                  <p class="font-inter text-[#03071299] py-3">Economy</p>
-                  <p class="font-inter text-[#03071299] py-3">550</p>
+                  <div
+                    id="selected-seats-details"
+                    class="grid grid-cols-3 col-span-3 justify-between"
+                  >
+                    <!-- <p class="font-inter text-[#03071299] py-3">C2</p>
+                    <p class="font-inter text-[#03071299] py-3">Economy</p>
+                    <p class="font-inter text-[#03071299] py-3">550</p> -->
+                  </div>
                   <span
                     class="col-span-3 border-b-2 border-dashed border-[#0307124D] my-3"
                   ></span>
                   <p class="text-[#030712] font-inter font-bold">Total Price</p>
                   <p></p>
-                  <p class="text-[#030712] font-inter font-bold">BDT 1100</p>
+                  <p class="text-[#030712] font-inter font-bold">
+                    BDT <span id="total-price"></span>
+                  </p>
                   <div
-                    class="col-span-3 bg-white rounded-xl flex justify-between items-center my-3 px-3"
+                    class="col-span-3 bg-white rounded-xl flex justify-between items-center my-3 px-3 disabled:"
                   >
                     <input
                       class="text-[#03071266] text-sm py-4 focus:outline-none"
                       type="text"
                       placeholder="Have any coupon?"
+                      disabled
                     />
                     <button
                       class="btn bg-[#1DD100] rounded-xl border-0 text-0 my-2 text-white"
+                      disabled
                     >
                       Apply
                     </button>
                   </div>
-                  <p class="text-[#030712] font-inter font-bold">Total Price</p>
+                  <p class="text-[#030712] font-inter font-bold">Grand Total</p>
                   <p></p>
-                  <p class="text-[#030712] font-inter font-bold">BDT 1100</p>
+                  <p class="text-[#030712] font-inter font-bold">
+                    BDT <span id="grand-total"></span>
+                  </p>
                 </div>
               </div>
               <div class="font-inter">
@@ -438,6 +651,7 @@
                 </label>
                 <button
                   class="w-full text-white font-bold bg-[#1DD100] py-4 rounded-2xl my-5"
+                  disabled
                 >
                   Next
                 </button>
@@ -479,5 +693,6 @@
         </div>
       </div>
     </footer>
+    <script src="scripts/app.js"></script>
   </body>
 </html>
