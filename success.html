@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Ticketing</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/icons/bus-logo.svg"
+      fill="#fff"
+    />
+
+    <!-- tailwind and daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- stleys  -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+      .font-raleway {
+        font-family: "Raleway", serif;
+      }
+
+      .font-inter {
+        font-family: "Inter", serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[#F7F8F8] flex justify-center items-center h-[100vh] w-[100vw]"
+  >
+    <div
+      class="flex flex-col gap-5 justify-center items-center bg-white rounded-xl p-10"
+    >
+      <img src="images/success.png" alt="" />
+      <p class="text-2xl text-[#27AE60]">Success</p>
+      <p class="text-[#4A4A4A]">
+        Thank you for Booking Our Bus Seats. We are working hard to find the
+        best service and deals for you.
+      </p>
+      <p class="text-[#4A4A4A]">
+        Shortly you will find a confirmation in your email.
+      </p>
+      <button
+        class="btn w-full text-white font-bold bg-[#1DD100] hover:bg-[#00d13bb3] py-4 rounded-full my-5"
+        id="continue-btn"
+      >
+        Continue
+      </button>
+    </div>
+    <script>
+      document.getElementById("continue-btn").addEventListener("click", () => {
+        window.location.href = "/";
+      });
+    </script>
+  </body>
+</html>

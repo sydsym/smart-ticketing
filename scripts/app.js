@@ -79,6 +79,7 @@ document.addEventListener("click", (e) => {
         document.getElementById("td-3").classList.remove("hidden");
         document.getElementById("total-discount").innerText = discount;
         document.getElementById("seat-disable").classList.remove("hidden");
+        document.getElementById("coupon-alert").classList.add("hidden");
       } else if (couponInputField.value === couple20) {
         let discount = totalPrice * 0.2;
         grandTotal = totalPrice - discount;
@@ -89,16 +90,37 @@ document.addEventListener("click", (e) => {
         document.getElementById("td-3").classList.remove("hidden");
         document.getElementById("total-discount").innerText = discount;
         document.getElementById("seat-disable").classList.remove("hidden");
+        document.getElementById("coupon-alert").classList.add("hidden");
       } else if (
         couponInputField.value !== couple20 ||
         couponInputField.value !== new15
       ) {
-        document.getElementById("coupon-alert").innerText =
-          "Invalid coupon! Please try again";
+        document.getElementById("coupon-alert").classList.remove("hidden");
+        couponInputField.value = "";
       } else {
         grandTotal = totalPrice;
         document.getElementById("grand-total").innerText = grandTotal;
       }
     });
   }
+});
+
+const passengerName = document.getElementById("passenger-name").value;
+const passengerPhoneInput = document.getElementById("passenger-phone");
+const passengerEmail = document.getElementById("passenger-email").value;
+const nextBtn = document.getElementById("next-btn");
+
+passengerPhoneInput.addEventListener("input", () => {
+  const passengerPhone = parseInt(passengerPhoneInput.value);
+  if (
+    typeof passengerPhone === "number" &&
+    passengerPhone >= 0 &&
+    selectedSeats.length > 0
+  ) {
+    nextBtn.removeAttribute("disabled");
+  }
+});
+
+nextBtn.addEventListener("click", () => {
+  window.location.href = "/success.html";
 });

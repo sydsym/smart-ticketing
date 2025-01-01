@@ -620,18 +620,19 @@
                       id="coupon-input"
                     />
                     <button
-                      class="btn bg-[#1DD100] rounded-xl border-0 text-0 my-2 text-white"
-                      disabled
+                      class="btn bg-[#1DD100] hover:bg-[#00d13bb3] rounded-xl border-0 text-0 my-2 text-white"
                       id="apply-btn"
+                      disabled
                     >
                       Apply
                     </button>
                   </div>
                   <p
                     id="coupon-alert"
-                    class="bg-[#ff00001e] text-red-700 text-sm col-span-3 p-3 rounded-xl"
+                    class="bg-[#ff00001e] text-red-700 text-sm col-span-3 p-3 rounded-xl hidden"
                   >
-                  </small>
+                    Invalid coupon! Please try again
+                  </p>
                   <p class="text-[#030712] font-inter font-bold">Grand Total</p>
                   <p></p>
                   <p class="text-[#030712] font-inter font-bold">
@@ -648,6 +649,7 @@
                     type="text"
                     placeholder="Enter your name"
                     class="input input-bordered w-full"
+                    id="passenger-name"
                   />
                 </label>
                 <label class="form-control w-full">
@@ -658,6 +660,7 @@
                     type="text"
                     placeholder="Enter your phone number"
                     class="input input-bordered w-full"
+                    id="passenger-phone"
                   />
                 </label>
                 <label class="form-control w-full">
@@ -668,10 +671,12 @@
                     type="text"
                     placeholder="Enter your email"
                     class="input input-bordered w-full"
+                    id="passenger-email"
                   />
                 </label>
                 <button
-                  class="w-full text-white font-bold bg-[#1DD100] py-4 rounded-2xl my-5"
+                  class="btn w-full text-white font-bold bg-[#1DD100] hover:bg-[#00d13bb3] py-4 rounded-2xl my-5"
+                  id="next-btn"
                   disabled
                 >
                   Next
